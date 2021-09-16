@@ -27,7 +27,7 @@
     <!-- game rules-->
     <b-container v-if="game_rules_div">
       <b-row>
-        <b-col class="second_class" cols="12" sm="12" md="6" lg="6" xl="6">
+        <b-col class="second_class" cols="12" sm="12" md="6" lg="6" xl="6" offset-md="3" offset-lg="3" offset-xl="3">
           <b-card
             title="Game Rules"
             img-src="https://picsum.photos/600/300/?image=25"
@@ -52,7 +52,7 @@
     <!-- choose player icon -->
     <b-container v-if="choose_icon_div">
       <b-row>
-        <b-col class="third_class" cols="12" sm="12" md="6" lg="6" xl="6">
+        <b-col class="third_class" cols="12" sm="12" md="6" lg="6" xl="6" offset-md="3" offset-lg="3" offset-xl="3">
           <b-card
             title="Choose Icon"
             img-src="https://picsum.photos/600/300/?image=25"
@@ -91,7 +91,7 @@
       <h2 v-if="this.count % 2 != 0 && this.count <= 9 && !this.result.winner_name" class="mt-5 font_style">{{ this.selected_icon_obj[0].name+" turn" }}</h2>
       <h2 v-if="this.count % 2 == 0 && this.count <= 9 && !this.result.winner_name" class="mt-5 font_style">{{ this.selected_icon_obj[1].name+" turn" }}</h2>
       <b-row>
-        <b-col class="fourth_class" cols="12" sm="12" md="6" lg="6" xl="6">
+        <b-col class="fourth_class" cols="12" sm="12" md="6" lg="6" xl="6" offset-md="3" offset-lg="3" offset-xl="3">
             <b-col>
                 <b-button value="1" id="btn_1" @click="tick_tak_toe_start(+($event.target.value))" class="btn_manage" variant="outline-info" size="lg"></b-button>
                 <b-button value="2" id="btn_2" @click="tick_tak_toe_start(+($event.target.value))" class="btn_manage" variant="outline-info" size="lg"></b-button>

@@ -1,12 +1,27 @@
 <template>
   <div id="app">
-    <div id="nav">
+    <!-- <div id="nav">
       <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+      <router-link to="/about">About</router-link> |
+      <router-link to="/hello">Hello</router-link>
+    </div> -->
+    <!-- <router-view/> -->
+    <TickTakToe />
   </div>
 </template>
+
+<script>
+
+import TickTakToe from './components/TickTakToe.vue'
+
+export default {
+  name : 'App',
+  
+  components : {
+    TickTakToe
+  }
+}
+</script>
 
 <style lang="scss">
 #app {

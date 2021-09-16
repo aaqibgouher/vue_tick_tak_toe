@@ -3,7 +3,7 @@
     <!-- start div -->
     <b-container v-if="start_div">
       <b-row>
-        <b-col class="first_class" cols="12" sm="12" md="6" lg="6" xl="6" offset-md-3 offset-lg-3 offset-xl-3>
+        <b-col class="first_class" cols="12" sm="12" md="6" lg="6" xl="6" offset-md="3" offset-lg="3" offset-xl="3">
           <b-card
             title="TICK TAK TOE"
             img-src="https://picsum.photos/600/300/?image=25"
